@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umpan Balik</title>
+</head>
+<body>
+    <h1>Umpan Balik</h1>
+    <p>{{ feedback }}</p>
+    
+    <form action="/next_question" method="post">
+        <input type="hidden" name="question" value="{{ question }}">
+        <input type="submit" value="Dapatkan Pertanyaan Berikutnya">
+    </form>
+    
+    <a href="/">Kembali ke Halaman Unggah</a>
+</body>
+</html>
